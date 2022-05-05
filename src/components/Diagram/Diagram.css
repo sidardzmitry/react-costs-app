@@ -1,0 +1,8 @@
+.diagram {
+  padding: 1rem;
+  background-color: #212529;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 10rem;
+}

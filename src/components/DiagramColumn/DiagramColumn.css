@@ -1,0 +1,29 @@
+.diagram__column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diagram__column__inner {
+  height: 100%;
+  width: 80%;
+  border-radius: 4px 4px 0 0;
+  background-color: #fefae1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.diagram__column__fill {
+  background-color: #1d613f;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+
+.diagram__column__label {
+  font-size: 0.6rem;
+  text-align: center;
+  color: #ffffff;
+}

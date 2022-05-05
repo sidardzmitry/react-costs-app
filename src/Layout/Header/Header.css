@@ -1,0 +1,11 @@
+.app__title{
+    color: rgb(0, 180, 180);
+    font-size: 60px;
+    margin: 0 auto;
+}
+.customs__header{
+    border-radius: 4px 4px 0 0;
+}
+.app__header{
+    padding: 0;
+}

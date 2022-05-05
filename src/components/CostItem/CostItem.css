@@ -1,0 +1,18 @@
+.cost__item{
+    border: 1px solid #ffc107;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.cost__items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cost__item__desc{
+    margin-top: 20px;
+    color: #00bcd4;
+}

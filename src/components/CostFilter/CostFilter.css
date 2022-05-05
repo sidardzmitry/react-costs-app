@@ -1,0 +1,11 @@
+.cost__filter{
+    padding: 5px 5px;
+    background-color: #212529;
+    border-bottom: 1px solid #00B4B4;
+}
+.cost__filter__label{
+    font-weight: 500;
+}
+.cost__filter__select{
+    margin-top: 5px;
+}

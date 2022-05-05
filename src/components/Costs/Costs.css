@@ -1,0 +1,15 @@
+.app__costs{
+    padding: 0;
+    background-color: #212529;
+    border-top: 1px solid #00B4B4;
+    border-radius: 0 0 4px 4px;
+}
+.costs{
+    padding: 5px 5px;
+    border-radius: 4px;
+    text-align: center;
+}
+.text__no__expenses{
+    color: #009688;
+    font-size: 25px;
+}
