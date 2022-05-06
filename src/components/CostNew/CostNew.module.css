@@ -1,10 +1,26 @@
-.form__btn{
-    padding: 10px 10px 10px 0;
+.form__btn {
+  padding: 10px 10px 10px 0;
 }
-.btn__can{
-    margin-left: 5px;
+.btn__can {
+  margin-left: 5px;
+  border: 1px solid #1d613f;
+  color: #1d613f;
+  background-color: #ffffff;
 }
-.label__form{
-    color: rgb(0, 180, 180);
-    background-color: #212529;
+.btn__can:hover {
+  transition: 0.5s;
+}
+.label__form {
+  color: rgb(0, 180, 180);
+  background-color: #212529;
+}
+.btn__submit {
+  background-color: #00b4b4;
+  color: #ffffff;
+  border: 1px solid #00b4b4;
+}
+.btn__submit:hover {
+  background-color: #212529;
+  color: #00b4b4;
+  transition: 0.5s;
 }

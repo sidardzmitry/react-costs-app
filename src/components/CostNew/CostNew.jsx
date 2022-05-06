@@ -74,7 +74,7 @@ const CostNew = (props) => {
             />
           </div>
           <div className={styles["form__btn"]}>
-            <button type="submit" className="btn btn-warning">
+            <button type="submit" className={`${'btn'} ${styles['btn__submit']}`}>
               Submit
             </button>
             <button

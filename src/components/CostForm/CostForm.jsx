@@ -24,7 +24,7 @@ const CostForm = (props) => {
     <div className={`${"container"} ${styles["form__cost"]} ${"bg-dark"}`}>
       {!isFormVisible ? (
         <button
-          className="btn btn-danger cost__form__btn"
+          className={`${"btn"} ${styles["cost__form__btn"]}`}
           onClick={inputCostDataHandler}
         >
           Add New Cost
