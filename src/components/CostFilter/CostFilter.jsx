@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CostFilter.css";
+import styles from "./CostFilter.module.css";
 
 const CostFilter = (props) => {
     const {onChangeYear, year} = props;
@@ -9,11 +9,11 @@ const CostFilter = (props) => {
   };
 
   return (
-    <div className="cost__filter">
-      <div className="cost__filter__control">
-        <label className="cost__filter__label">Selection by year</label>
+    <div className={styles["cost__filter"]}>
+      <div className={styles["cost__filter__control"]}>
+        <label className={styles["cost__filter__label"]}>Selection by year</label>
         <select
-          className="cost__filter__select form-select form-select-sm"
+          className={`${styles["cost__filter__select"]} ${'form-select'} ${'form-select-sm'}`}
           onChange={yearChangeHandler}
           value={year}
         >

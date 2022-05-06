@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './App.css';
+import styles from './App.module.css';
 import Costs from "./components/Costs/Costs";
 import CostForm from './components/CostForm/CostForm';
 import Header from './Layout/Header/Header';
@@ -35,7 +35,7 @@ function App() {
   }
 
   return (
-  <div className="app">
+  <div className={styles.app}>
     <Header/>
     <CostForm onAddCost={addCostHandler}/>
     <Costs costs={costs}/>

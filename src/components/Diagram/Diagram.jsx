@@ -1,4 +1,4 @@
-import "./Diagram.css";
+import styles from "./Diagram.module.css";
 import DiagramColumn from "../DiagramColumn/DiagramColumn";
 
 const Diagram = (props) => {
@@ -6,7 +6,7 @@ const Diagram = (props) => {
   const dataSetsValues = dataSets.map(dataSet => dataSet.value)
   const maxMonthCosts = Math.max(...dataSetsValues)
   return (
-    <div className="diagram">
+    <div className={styles.diagram}>
       {dataSets.map((dataSet) => (
         <DiagramColumn
           key={dataSet.label}

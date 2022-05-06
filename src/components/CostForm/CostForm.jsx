@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CostNew from "../CostNew/CostNew";
-import "./CostForm.css";
+import styles from "./CostForm.module.css";
 
 const CostForm = (props) => {
   const { onAddCost } = props;
@@ -21,7 +21,7 @@ const CostForm = (props) => {
     setFormVisible(false)
   }
   return (
-    <div className="container form__cost bg-dark">
+    <div className={`${"container"} ${styles["form__cost"]} ${"bg-dark"}`}>
       {!isFormVisible ? (
         <button
           className="btn btn-danger cost__form__btn"

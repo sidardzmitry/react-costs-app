@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Costs.css";
+import styles from "./Costs.module.css";
 import CostItem from "..//CostItem/CostItem";
 import CostFilter from "../CostFilter/CostFilter";
 import CostsDiagram from "../CostsDiagram/CostsDiagram";
@@ -16,12 +16,12 @@ const Costs = (props) => {
   });
 
   return (
-    <div className="container app__costs">
+    <div className={`${"container"} ${styles["app__costs"]}`}>
       <CostFilter year={selectedYear} onChangeYear={yearChangeHandler} />
       <CostsDiagram costs={filterCosts}/>
-      <div className="costs">
+      <div className={styles.costs}>
         {filterCosts.length === 0 ? (
-          <div className="text__no__expenses">No expenses</div>
+          <div className={styles["text__no__expenses"]}>No expenses</div>
         ) : (
           filterCosts.map((cost) => (
             <CostItem

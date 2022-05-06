@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CostNew.css";
+import styles from "./CostNew.module.css";
 
 const CostNew = (props) => {
   const { onSaveCostData, onCancel } = props;
@@ -37,7 +37,7 @@ const CostNew = (props) => {
       <form onSubmit={submitHandler}>
         <div className="cost__new__controls">
           <div className="mb-3 cost__new__control input-group">
-            <span htmlFor="shoppingTitle" className="input-group-text label__form">Title</span>
+            <span htmlFor="shoppingTitle" className={`${"input-group-text"} ${styles["label__form"]}`}>Title</span>
             <input
               className="form-control form-control"
               id="shoppingTitle"
@@ -48,7 +48,7 @@ const CostNew = (props) => {
             />
           </div>
           <div className="mb-3 cost__new__control input-group">
-            <span htmlFor="price" className="input-group-text label__form">Price</span>
+            <span htmlFor="price" className={`${"input-group-text"} ${styles["label__form"]}`}>Price</span>
             <input
               className="form-control form-control"
               id="price"
@@ -61,7 +61,7 @@ const CostNew = (props) => {
             />
           </div>
           <div className="mb-3 cost__new__control input-group">
-            <span htmlFor="date" className="input-group-text label__form">Date</span>
+            <span htmlFor="date" className={`${"input-group-text"} ${styles["label__form"]}`}>Date</span>
             <input
               className="form-control form-control"
               id="date"
@@ -73,14 +73,14 @@ const CostNew = (props) => {
               onChange={dateHandler}
             />
           </div>
-          <div className="form__btn">
-            <button type="submit" className="btn btn-warning btn__sub">
+          <div className={styles["form__btn"]}>
+            <button type="submit" className="btn btn-warning">
               Submit
             </button>
             <button
               type="button"
               onClick={onCancel}
-              className="btn btn-success btn__can"
+              className={`${"btn"} ${"btn-success"} ${styles["btn__can"]}`}
             >
               Cancel
             </button>

@@ -1,4 +1,4 @@
-import "./CostsDiagram.css";
+import styles from "./CostsDiagram.module.css";
 import Diagram from "..//Diagram/Diagram";
 
 const CostsDiagram = (props) => {

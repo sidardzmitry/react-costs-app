@@ -1,4 +1,4 @@
-import "./DiagramColumn.css";
+import styles from "./DiagramColumn.module.css";
 
 const DiagramColumn = (props) => {
   const { value, maxValue, label } = props;
@@ -7,16 +7,16 @@ const DiagramColumn = (props) => {
     columnFillHeight = Math.round((value / maxValue) * 100) + "%";
   }
   return (
-    <div className="diagram__column">
-      <div className="diagram__column__inner">
+    <div className={styles["diagram__column"]}>
+      <div className={styles["diagram__column__inner"]}>
         <div
-          className="diagram__column__fill"
+          className={styles["diagram__column__fill"]}
           style={{
             height: columnFillHeight,
           }}
         ></div>
       </div>
-      <div className="diagram__column__label">{label}</div>
+      <div className={styles["diagram__column__label"]}>{label}</div>
     </div>
   );
 };
